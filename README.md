@@ -2,9 +2,9 @@
 
 Inspired by [z](https://github.com/rupa/z).
 
-### Usage
+### How to use
 
-Copy ```u``` to ```/bin/```, ```/usr/local/bin``` or one of the folders of binary files in the ```$PATH```
+Copy [```u```](https://github.com/domingohui/up/blob/master/u) to ```/bin/```, ```/usr/local/bin``` or one of the folders for binary files in the ```$PATH```
 
 To run, within a project (sub)folders,
 
