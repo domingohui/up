@@ -6,6 +6,10 @@ Inspired by [z](https://github.com/rupa/z).
 
 Copy [```u```](https://github.com/domingohui/up/blob/master/u) to ```/bin/```, ```/usr/local/bin``` or one of the folders for binary files in the ```$PATH```
 
+```
+chmod +x [path to u]
+```
+
 To run, within a project (sub)folders,
 
 ```
