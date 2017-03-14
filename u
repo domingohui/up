@@ -1,0 +1,28 @@
+#! /bin/bash
+
+# CD to the git root directory
+
+_default_start_dir="../"
+
+function up {
+    # If pwd is $HOME, then do nothing
+    if [ $1 == $HOME -o $(pwd) == $HOME ]; then
+        return
+    fi
+
+    # Get folders from parent directory
+    contents="$(ls -a "$1" )"
+
+    for file in $contents; do
+        if [ $file == ".git" ]; then
+            # Go to the parent directory
+            cd $1
+            return
+        fi
+    done
+    # .git not found here. Search parent directory
+    up "$(dirname "$1")"
+}
+
+# Start with current directory
+up "$(pwd)"
