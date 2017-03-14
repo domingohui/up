@@ -2,8 +2,6 @@
 
 # CD to the git root directory
 
-_default_start_dir="../"
-
 function up {
     # If pwd is $HOME, then do nothing
     if [ $1 == $HOME -o $(pwd) == $HOME ]; then
